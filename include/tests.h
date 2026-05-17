@@ -2,4 +2,4 @@
 #ifndef INCLUDE_TESTS_H_
 #define INCLUDE_TESTS_H_
 
-#endif
+#endif  // INCLUDE_TESTS_H_
