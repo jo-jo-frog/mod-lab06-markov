@@ -1,10 +1,11 @@
+// Copyright 2025 Anisimov
 #include "textgen.h"
 
 #include <gtest/gtest.h>
 
 #include <algorithm>
-#include <cstdio>
 #include <fstream>
+#include <stdio.h>
 #include <string>
 
 TEST(MarkovTest, PrefixCreation) {
@@ -108,7 +109,7 @@ TEST(MarkovTest, BuildFromFile) {
   EXPECT_TRUE(ok);
   EXPECT_EQ(gen.getTable().size(), 4);
 
-  std::remove("temp_test.txt");
+  remove("temp_test.txt");
 }
 
 TEST(MarkovTest, PrefixShift) {
