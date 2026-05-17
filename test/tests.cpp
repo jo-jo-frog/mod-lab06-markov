@@ -2,7 +2,7 @@
 #include "tests.h"
 #include "textgen.h"
 
-#include <gtest/gtest.h>
+#include <stdio.h>
 
 #include <algorithm>
 #include <fstream>
