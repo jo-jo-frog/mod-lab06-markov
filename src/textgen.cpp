@@ -61,8 +61,8 @@ bool TextGenerator::buildFromFile(const std::string& filename) {
 
 std::string TextGenerator::randomSuffix(const std::vector<std::string>& suffixes) {
   if (suffixes.empty()) return "";
-  std::uniform_int_distribution<size_t> dist(0,
-      suffixes.size() - 1);
+  std::uniform_int_distribution<size_t> dist(
+      0, suffixes.size() - 1);
   return suffixes[dist(rng)];
 }
 
@@ -72,7 +72,8 @@ std::string TextGenerator::generate(int maxWords) {
   }
 
   auto it = statetab.begin();
-  std::uniform_int_distribution<size_t> dist(0, statetab.size() - 1);
+  std::uniform_int_distribution<size_t> dist(
+      0, statetab.size() - 1);
   std::advance(it, dist(rng));
   return generateFrom(it->first, maxWords);
 }
