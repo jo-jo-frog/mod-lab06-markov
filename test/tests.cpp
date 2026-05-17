@@ -1,5 +1,6 @@
 // Copyright 2025 Anisimov
 #include "tests.h"
+
 #include "textgen.h"
 
 #include <stdio.h>
