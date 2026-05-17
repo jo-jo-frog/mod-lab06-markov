@@ -1,15 +1,17 @@
+// Copyright 2025 Anisimov
 #include "textgen.h"
 
-#include <fstream>
-#include <sstream>
 #include <algorithm>
-#include <ctime>
 #include <cctype>
+#include <ctime>
+#include <fstream>
 #include <iostream>
+#include <sstream>
 #include <string>
 #include <vector>
 
-TextGenerator::TextGenerator(int npref) : NPREF(npref), rng(std::time(nullptr)) {}
+TextGenerator::TextGenerator(int npref)
+    : NPREF(npref), rng(std::time(nullptr)) {}
 
 void TextGenerator::clear() {
   statetab.clear();
@@ -59,7 +61,8 @@ bool TextGenerator::buildFromFile(const std::string& filename) {
 
 std::string TextGenerator::randomSuffix(const std::vector<std::string>& suffixes) {
   if (suffixes.empty()) return "";
-  std::uniform_int_distribution<size_t> dist(0, suffixes.size() - 1);
+  std::uniform_int_distribution<size_t> dist(
+      0, suffixes.size() - 1);
   return suffixes[dist(rng)];
 }
 
