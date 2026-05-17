@@ -1,11 +1,12 @@
+// Copyright 2025 Anisimov
 #ifndef INCLUDE_TEXTGEN_H_
 #define INCLUDE_TEXTGEN_H_
 
 #include <deque>
 #include <map>
+#include <random>
 #include <string>
 #include <vector>
-#include <random>
 
 typedef std::deque<std::string> Prefix;
 typedef std::map<Prefix, std::vector<std::string>> Statetab;
@@ -31,4 +32,4 @@ class TextGenerator {
   std::string randomSuffix(const std::vector<std::string>& suffixes);
 };
 
-#endif
+#endif  // INCLUDE_TEXTGEN_H_
