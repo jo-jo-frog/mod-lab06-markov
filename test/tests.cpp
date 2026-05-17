@@ -1,13 +1,13 @@
 // Copyright 2025 Anisimov
 #include "textgen.h"
 
-#include <gtest/gtest.h>
-
 #include <stdio.h>
 
 #include <algorithm>
 #include <fstream>
 #include <string>
+
+#include <gtest/gtest.h>
 
 TEST(MarkovTest, PrefixCreation) {
   Prefix p;
