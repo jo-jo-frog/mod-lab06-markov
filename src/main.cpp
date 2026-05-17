@@ -2,6 +2,8 @@
 #include "main.h"
 #include "textgen.h"
 
+#include <stdlib.h>
+
 #include <fstream>
 #include <iostream>
 #include <string>
