@@ -1,7 +1,8 @@
 // Copyright 2025 Anisimov
+#include "tests.h"
 #include "textgen.h"
 
-#include <stdio.h>
+#include <gtest/gtest.h>
 
 #include <algorithm>
 #include <fstream>
