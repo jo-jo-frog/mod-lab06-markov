@@ -1,7 +1,7 @@
 // Copyright 2025 Anisimov
 #include "textgen.h"
 
-#include <cstdlib>
+#include <stdlib.h>
 
 #include <fstream>
 #include <iostream>
