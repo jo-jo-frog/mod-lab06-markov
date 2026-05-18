@@ -1,8 +1,8 @@
 // Copyright 2025 Anisimov
 #include "tests.h"
 
-#include <stdio.h>
 #include <algorithm>
+#include <cstdio>
 #include <fstream>
 #include <string>
 
