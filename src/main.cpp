@@ -1,13 +1,13 @@
 // Copyright 2025 Anisimov
 #include "main.h"
 
-#include "textgen.h"
-
 #include <stdlib.h>
 
 #include <fstream>
 #include <iostream>
 #include <string>
+
+#include "textgen.h"
 
 int main(int argc, char* argv[]) {
   const int NPREF = 2;
