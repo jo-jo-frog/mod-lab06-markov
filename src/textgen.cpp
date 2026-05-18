@@ -59,7 +59,9 @@ bool TextGenerator::buildFromFile(const std::string& filename) {
   return true;
 }
 
-std::string TextGenerator::randomSuffix(const std::vector<std::string>& suffixes) {
+// Сигнатура разбита, чтобы длина строки не превышала 80 символов
+std::string TextGenerator::randomSuffix(
+    const std::vector<std::string>& suffixes) {
   if (suffixes.empty()) return "";
   std::uniform_int_distribution<size_t> dist(
       0, suffixes.size() - 1);
