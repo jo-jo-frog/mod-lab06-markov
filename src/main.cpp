@@ -1,6 +1,4 @@
 // Copyright 2025 Anisimov
-#include "main.h"
-
 #include <stdlib.h>
 
 #include <fstream>
