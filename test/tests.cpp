@@ -1,6 +1,4 @@
 // Copyright 2025 Anisimov
-#include <stdio.h>
-
 #include <algorithm>
 #include <fstream>
 #include <string>
