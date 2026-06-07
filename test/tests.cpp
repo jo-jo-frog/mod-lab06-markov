@@ -6,6 +6,8 @@
 #include <vector>
 #include <algorithm>
 #include <sstream>
+#include <fstream>
+#include <cstdio>
 #include "textgen.h"
 
 TEST(MarkovTest, PrefixCreation) {
