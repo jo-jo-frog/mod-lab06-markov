@@ -1,8 +1,4 @@
 // Copyright 2025 Anisimov
-#include "main.h"
-
-#include <stdlib.h>
-
 #include <fstream>
 #include <iostream>
 #include <string>
@@ -30,7 +26,7 @@ int main(int argc, char* argv[]) {
 
   std::string generatedText = generator.generate(MAXGEN);
 
-  std::ofstream outFile("result/gen.txt");
+  std::ofstream outFile("../result/gen.txt");
   if (outFile.is_open()) {
     outFile << generatedText;
     outFile.close();

@@ -1,4 +1,5 @@
 // Copyright 2025 Anisimov
+
 #ifndef INCLUDE_TEXTGEN_H_
 #define INCLUDE_TEXTGEN_H_
 
