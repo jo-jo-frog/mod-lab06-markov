@@ -1,8 +1,11 @@
 // Copyright 2025 Anisimov
-#include <algorithm>
-#include <fstream>
-#include <string>
+
 #include <gtest/gtest.h>
+#include <ctime>
+#include <string>
+#include <vector>
+#include <algorithm>
+#include <sstream>
 #include "textgen.h"
 
 TEST(MarkovTest, PrefixCreation) {
