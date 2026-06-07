@@ -1,5 +1,4 @@
 // Copyright 2025 Anisimov
-
 #include <stdio.h>
 
 #include <algorithm>
